@@ -1,8 +1,8 @@
 <header class="header">
     <div class="flex">
-        <a href="home.php" class="logo"></a>
+        <a href="index.php" class="logo"></a>
         <nav class="navbar">
-            <a href="home.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="view_products.php">Produk</a>
             <a href="about.php">tentang</a>
             <a href="contact.php">Contact</a>

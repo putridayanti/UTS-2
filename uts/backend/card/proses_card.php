@@ -6,7 +6,7 @@ require_once '../../db.php';
 
 // Ambil data dari form
 
-$_card = $_POST['card'];
+$_name = $_POST['name'];
 $_discount = $_POST['discount'];
 $_member_fee = $_POST['member_fee'];
 $_proses = $_POST['proses'];
@@ -14,7 +14,7 @@ $_proses = $_POST['proses'];
 
 // Simpan data ke dalam array
 
-$ar_data[]=$_card;
+$ar_data[]=$_name;
 $ar_data[]=$_discount;
 $ar_data[]=$_member_fee;
 

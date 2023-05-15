@@ -33,7 +33,7 @@
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="../../frontend/login.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -58,7 +58,7 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>jenis_produk/jenis_produk.php">Jenis Produk</a>
                                     <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>produk/produk.php">Produk</a>
-                                    <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>Pesanan/Pesanan.php">Pesanan</a>
+                                    <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>pesanan/pesanan.php">Pesanan</a>
                                     <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>customer/customer.php">Pembeli</a>
                                     <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>supplier/supplier.php">Supplier</a>
                                     <a class="nav-link" href="<?= ROOT_PATH_ADMIN ?>card/card.php">Card</a>

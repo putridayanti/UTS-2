@@ -1,6 +1,6 @@
 <?php 
 // berisi jalur root url
-require_once '../../../config.php';
+require_once '../../config.php';
 
 // Memanggil file dbkoneksi.php yang berisi koneksi ke database
 require_once '../../db.php';

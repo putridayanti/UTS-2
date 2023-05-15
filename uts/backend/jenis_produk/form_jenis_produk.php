@@ -11,7 +11,7 @@ include_once '../template/header.php';
 $_id = isset($_GET['id']) ? $_GET['id'] : null;
 if (!empty($_id)) {
     // ambil data produk berdasarkan id
-    $sql = "SELECT * FROM product WHERE id=?";
+    $sql = "SELECT * FROM product_type WHERE id=?";
     $st = $dbh->prepare($sql);
     $st->execute([$_id]);
     $row = $st->fetch();

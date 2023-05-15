@@ -15,7 +15,7 @@
         <div class="title">
             <h1>register now</h1>
         </div>
-        <form action="login.php" method="post">
+        <form action="../frontend/index.php" method="post">
             <div class="input-field">
                 <p>your name </p>
                 <input type="text" name="name" required placeholder="enter your name" maxlength="50">

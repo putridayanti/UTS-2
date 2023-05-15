@@ -39,34 +39,18 @@ if (!empty($_id)) {
         <form method="POST" action="proses_card.php">
             <div class="form-group row">
             <div class="form-group row">
-                <label for="card" class="col-4 col-form-label">Nama Kartu</label>
+                <label for="name" class="col-4 col-form-label">Nama Kartu</label>
                 <div class="col-8">
-                    <?php
-                    $sqlcard = "SELECT * FROM `card`";
-                    $rscard = $dbh->query($sqlcard);
-                    ?>
-                    <select id="card" name="card" class="form-control" required>
-                        <option value=""></option>
-                        <?php
-                        foreach ($rscard as $rowcard) {
-                            if (isset($row['card'])){
-                                if ($row['card'] == $rowcard['name']) {
-                                    $checked = true;
-                                }
-                            }
-                        ?>
-                            <option value="<?= $rowcard['id'] ?>" <?= isset($checked)? "selected": "" ?> ><?= $rowcard['name'] ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
+                    <div class="input-group">
+                        <input id="name" name="name" type="text" class="form-control" value="<?php if (isset($row['name'])) echo $row['name']; ?>">
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="discount" class="col-4 col-form-label">Diskon</label>
                 <div class="col-8">
                     <div class="input-group">
-                        <input id="discount" name="discount" type="text" class="form-control" value="<?php if (isset($row['sell_price'])) echo $row['sell_price']; ?>">
+                        <input id="discount" name="discount" type="text" class="form-control" value="<?php if (isset($row['discount'])) echo $row['discount']; ?>">
                     </div>
                 </div>
             </div>
@@ -74,7 +58,7 @@ if (!empty($_id)) {
                 <label for="member_fee" class="col-4 col-form-label">Member Fee</label>
                 <div class="col-8">
                     <div class="input-group">
-                        <input id="member_fee" name="member_fee" type="text" class="form-control" value="<?php if (isset($row['stock'])) echo $row['stock']; ?>">
+                        <input id="member_fee" name="member_fee" type="text" class="form-control" value="<?php if (isset($row['member_fee'])) echo $row['member_fee']; ?>">
                     </div>
                 </div>
             </div>

@@ -94,7 +94,7 @@ if (!empty($_id)) {
                 </div>
             </div>
             <div class="form-group row">
-                <label for="restock" class="col-4 col-form-label">Jenis Produk</label>
+                <label for="restock" class="col-4 col-form-label">Restock</label>
                 <div class="col-8">
                     <?php
                     $sqlrestock = "SELECT * FROM restock";

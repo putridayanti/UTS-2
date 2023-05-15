@@ -18,7 +18,7 @@ include "asset/connection.php";
    <?php include 'asset/header.php';?>
    <div class="main">
             <div class="title2">
-                <a href="home.php">home</a><span>/ about</span>
+                <a href="index.php">home</a><span>/ about</span>
             </div>
             <div class="about">
                 <div class="row">

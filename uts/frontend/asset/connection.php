@@ -1,5 +1,5 @@
 <?php
-    $db_name = 'mysql:host=localhost;dbname=dbkitchentools';
+    $db_name = 'mysql:host=127.0.0.1;dbname=dbkitchentools';
     $db_user = 'root';
     $db_password = '';
 

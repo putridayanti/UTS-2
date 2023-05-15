@@ -44,7 +44,7 @@ if (!empty($_id)) {
                     <label for="date" class="col-4 col-form-label">tanggal pesanan</label>
                     <div class="col-8">
                         <div class="input-group">
-                            <input id="date" name="date" type="date" class="form-control" value="<?php if (isset($row['date'])) echo $row['date']; ?>">
+                            <input id="date" name="date" type="datetime-local" class="form-control" value="<?php if (isset($row['date'])) echo $row['date']; ?>">
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,8 @@ if (!empty($_id)) {
                             <option value=""></option>
                             <?php
                             foreach ($rscustomer as $rowcustomer) {
-                                if (isset($row['customer'])){
-                                    if ($row['customer'] == $rowcustomer['id']) {
+                                if (isset($row['customer_id'])){
+                                    if ($row['customer_id'] == $rowcustomer['id']) {
                                         $checked = true;
                                     }
                                 }

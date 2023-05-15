@@ -10,7 +10,12 @@ include_once '../template/header.php';
 
 <?php 
     // select all data from Produk "produk"
-    $sql = "SELECT * FROM `order`";
+    $sql = "SELECT `order`.*, 
+    `customer`.`name` AS `customer`,
+    `product`.`name` AS `product` 
+    FROM `order`
+    LEFT JOIN `customer` ON `order`.customer_id = customer.id
+    LEFT JOIN `product` ON `order`.product_id = product.id";
     // execute the query
     $rs = $dbh->query($sql);
 ?>
@@ -28,11 +33,13 @@ include_once '../template/header.php';
 
                             
                             <div class="card-body">
-                                <a class="btn btn-success" href="form_pesanan.php" role="button">Create Produk</a>
+                                <a class="btn btn-success" href="form_pesanan.php" role="button">Create Pesanan</a>
                                 <table class="table" width="100%" border="1" cellspacing="2" cellpadding="2">
                                     <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Customer</th>
+                                        <th>Product</th>
                                         <th>date</th>
                                         <th>QTY</th>
                                         <th>Total Harga</th>
@@ -49,6 +56,8 @@ include_once '../template/header.php';
                                         ?>
                                         <tr>
                                             <td><?=$nomor?></td>
+                                            <td><?=$row['customer']?></td>
+                                            <td><?=$row['product']?></td>
                                             <td><?=$row['date']?></td>
                                             <td><?=$row['qty']?></td>
                                             <td><?=$row['total_price']?></td>
